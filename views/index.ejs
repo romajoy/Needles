@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Needles Home</title>
+</head>
+<body>
+    <header>
+        <h1>NeedleMinder</h1>
+    </header>
+    <div class="container">
+        <a class="btn btn-light" href="/needles/new">Add Needle to Collection</a><br>
+        <div>
+            <h2>Current Needles</h2>
+            <table>
+                <tr>
+                    <th>Size</th>
+                    <th>Brand</th>
+                    <th>Style</th>
+                    <th>Length</th>
+                    <th>Material</th>
+                    <th>Point</th>
+                    <th>Complete Set</th>
+                    <th>In Use</th>
+                    <th>Current Project</th>
+                    <th>Needs to be replaced</th>
+                    <th>Favorite</th>
+                    <th>Notes</th>
+                </tr>
+                <% for (let i = 0; i < needle.length; i++) {%>
+                <tr>
+                    <td><a href="/needles/<%=needle[i].id%>"><%=needle[i].size%></a></td>
+                    <td><%=needle[i].brand%></td>
+                    <td><%=needle[i].style%></td>
+                    <td><%=needle[i].long%></td>
+                    <td><%=needle[i].material%></td>
+                    <td><%=needle[i].point%></td>
+                    <td><%=needle[i].setComplete%></td>
+                    <td><%=needle[i].inUse%></td>
+                    <td><%=needle[i].project%></td>
+                    <td><%=needle[i].replace%></td>
+                    <td><%=needle[i].favorite%></td>
+                    <td><%=needle[i].misc%></td>
+                </tr>
+                <% } %>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

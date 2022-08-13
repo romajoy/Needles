@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Needles</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Needle to Collection</h1>
+        <form action="/needles" method="POST"></br>
+            <input type="text" name="size" placeholder="Needle Size (ex. US6)"/></br>
+            <input type="text" name="brand" placeholder="Brand (ex. Chiagoo)" /> </br>
+            <input type="text" name="style" placeholder="Style (ex. Circular)"/></br>
+            <input type="text" name="long" placeholder="Length (ex. 16 inches)"/></br>
+            <input type="text" name="material" placeholder="Material (ex. metal)"/></br>
+            <input type="text" name="point" placeholder="Point Type (ex. lace point)"/></br>
+            Complete Set:<input type="checkbox" name="setComplete"/></br>
+            In Use:<input type="checkbox" name="inUse"/></br>
+            <input type="text" name="project" placeholder="Project being used in (ex. Weekender)"/></br>
+            Replace Soon:<input type="checkbox" name="replace"/></br>
+            Favorite:<input type="checkbox" name="favorite"/></br>
+            <input type="text" name="misc" placeholder="Other Notes: (ex. best needles for sock, favorite sock needles)"/></br>
+            <input type="submit" value="Add Needle to Collection"/></br>
+            <a class="btn btn-light" href="/needles">Return to NeedleMindr</a>
+        </form>
+    </div>
+</body>
+</html>
